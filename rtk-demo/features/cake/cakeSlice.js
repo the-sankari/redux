@@ -15,6 +15,7 @@ const cakeSlice = createSlice({
       state.numOfCakes += action.payload;
     },
   },
+
 });
 
 module.exports = cakeSlice.reducer;

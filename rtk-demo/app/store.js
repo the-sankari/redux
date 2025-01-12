@@ -10,7 +10,7 @@ const store = configureStore({
     cake: cakeReducer,
     iceCreame: iceCreameReducer,
   },
-  middleware: (getMiddleware) => getMiddleware().concat(logger),
+//   middleware: (getMiddleware) => getMiddleware().concat(logger),
 });
 
 module.exports = store;
