@@ -1,8 +1,12 @@
-const confugureStore = require("@reduxjs/toolkit").configureStore;
+const configureStore = require("@reduxjs/toolkit").configureStore;
 const cakeReducer = require("../features/cake/cakeSlice");
+const iceCreameReducer = require("../features/icecreame/iceCreamSlice");
 
-const store = confugureStore({
-  reducer: cakeReducer,
+const store = configureStore({
+  reducer: {
+    cake: cakeReducer,
+    iceCreame: iceCreameReducer,
+  },
 });
 
 module.exports = store;
